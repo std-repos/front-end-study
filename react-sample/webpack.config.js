@@ -25,6 +25,11 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    contentBase: path.join(__dirname, '/'),
+    historyApiFallback: true,
+    port:3000
+  },
   //새로 추가
   resolve: {
     extensions: ['.js','.css']
