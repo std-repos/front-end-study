@@ -30,7 +30,7 @@ module.exports = {
     extensions: ['.js','.css']
   },
   plugins: [
-    new ExtractTextPlugin('./css/style.css')
+    new ExtractTextPlugin('../css/style.css')
   ],
   mode: 'development', //책에 없었음
 };
