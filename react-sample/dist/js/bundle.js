@@ -410,7 +410,7 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!./s
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _hello = __webpack_require__(/*! ./hello */ \"./src/js/hello.js\");\n\nvar _hello2 = _interopRequireDefault(_hello);\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _style = __webpack_require__(/*! ../css/style */ \"./src/css/style.css\");\n\nvar _style2 = _interopRequireDefault(_style);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n/*hello();*/\n\n//app.js\n_reactDom2.default.render(_react2.default.createElement(\n    'h1',\n    null,\n    'Hello world!!!Hello world!!!'\n), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("\n\nvar _hello = __webpack_require__(/*! ./hello */ \"./src/js/hello.js\");\n\nvar _hello2 = _interopRequireDefault(_hello);\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _style = __webpack_require__(/*! ../css/style */ \"./src/css/style.css\");\n\nvar _style2 = _interopRequireDefault(_style);\n\nvar _person = __webpack_require__(/*! ./person */ \"./src/js/person.js\");\n\nvar _person2 = _interopRequireDefault(_person);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _hello2.default)(); //app.js\n//import foo from './hello';\n\n\n_reactDom2.default.render(_react2.default.createElement(\n    'h1',\n    null,\n    'Hello world!!!Hello world!!!'\n), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ }),
 
@@ -423,6 +423,18 @@ eval("\n\nvar _hello = __webpack_require__(/*! ./hello */ \"./src/js/hello.js\")
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nexports.default = function () {\n\tconsole.log('hello frontend');\n};\n\n//# sourceURL=webpack:///./src/js/hello.js?");
+
+/***/ }),
+
+/***/ "./src/js/person.js":
+/*!**************************!*\
+  !*** ./src/js/person.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n//-- 여기서 테스트 함 \n//-- 여기서 하고 빌드하면 dist/js/bundle.js 에 들어갈꺼임 \n//-- index.html \n\nvar Person = function () {\n    function Person(id, name) {\n        _classCallCheck(this, Person);\n\n        this.id = id;\n        this.name = name;\n    }\n\n    _createClass(Person, [{\n        key: \"printName\",\n        value: function printName() {\n            console.log(this.name);\n        }\n    }]);\n\n    return Person;\n}();\n\nvar person = new Person(1, \"철수\");\nperson.printName();\n\n//-- 노출\nexports.default = Person;\n\n//# sourceURL=webpack:///./src/js/person.js?");
 
 /***/ })
 
