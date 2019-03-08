@@ -9,4 +9,4 @@ import style from '../css/style';
 ReactDom.render(
     <h1>Hello world!!!Hello world!!!</h1>, 
     document.getElementById('root')
-);
+);;
