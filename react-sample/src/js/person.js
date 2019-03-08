@@ -15,12 +15,13 @@
      person.printName();*/
 
      class Participant extends Person {
-         construcotr (id, name, channel) {
+         //construcotr (id, name, channel) {
+         constructor (id, name, channel) {
              super(id,name);
              this.channel = channel;
          }
 
-         sendMessage(meaessage) {
+         sendMessage(meaess) {
              console.log()
          }
      }
