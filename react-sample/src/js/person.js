@@ -11,8 +11,20 @@
             console.log(this.name);
         }
     }
-     var person = new Person(1, "철수");
-     person.printName();
+     /*var person = new Person(1, "철수");
+     person.printName();*/
+
+     class Participant extends Person {
+         construcotr (id, name, channel) {
+             super(id,name);
+             this.channel = channel;
+         }
+
+         sendMessage(meaessage) {
+             console.log()
+         }
+     }
+
 
 
      //-- 노출
