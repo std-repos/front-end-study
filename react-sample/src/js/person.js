@@ -22,7 +22,8 @@
          }
 
          sendMessage(message) {
-             console.log('{this.name}님이 {this.channel}에 {message}를 포스팅 했습니다.');
+            console.log(this.name + "님이 " + this.channel+ "에 '" + message + "'를 포스팅 했습니다."); 
+            //console.log('{this.name}님이 {this.channel}에 {message}를 포스팅 했습니다.');
          }
      }
 
@@ -30,4 +31,4 @@
 
      //-- 노출
      //export default Person; 
-     export default Person;
+     export { Person as default, Participant}; //-- 클래스 두개 다 내보내기 
