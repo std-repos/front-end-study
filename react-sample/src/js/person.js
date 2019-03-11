@@ -15,14 +15,13 @@
      person.printName();*/
 
      class Participant extends Person {
-         //construcotr (id, name, channel) {
          constructor (id, name, channel) {
              super(id,name);
              this.channel = channel;
          }
 
-         sendMessage(meaess) {
-             console.log()
+         sendMessage(message) {
+             console.log('{this.name}님이 {this.channel}에 {message}를 포스팅 했습니다.');
          }
      }
 
