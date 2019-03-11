@@ -11,8 +11,9 @@
             console.log(this.name);
         }
     }
-     /*var person = new Person(1, "철수");
-     person.printName();*/
+     //-- 여기다가 해도 되는데, import 를 잘해야 함. 
+     //var person = new Person(1, "철수");
+     //person.printName();
 
      class Participant extends Person {
          constructor (id, name, channel) {
@@ -28,4 +29,5 @@
 
 
      //-- 노출
-     export default Person; 
+     //export default Person; 
+     export default Person;
