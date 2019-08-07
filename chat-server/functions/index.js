@@ -61,7 +61,7 @@ function createChannel(cname){
                 }
             },
             "2" : {
-                "body" : "はじめてのメッセージを投稿してみましょう。",
+                "body" : "첫번째 메세지를 보내봅시다.",
                 "date" : "${date2.toJSON()}",
                 "user" : {
                     "avatar" : "",
@@ -132,3 +132,4 @@ app.post('/reset', (req, res) => {
 
 exports.v1 = functions.https.onRequest(app);
 
+//npm run build:dev

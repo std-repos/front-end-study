@@ -9,8 +9,12 @@
     "logs": "firebase functions:log"
   },
   "dependencies": {
+    "cores": "^0.8.5",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
     "firebase-admin": "~5.11.0",
     "firebase-functions": "^1.0.0"
   },
+  "devDependencies": {},
   "private": true
 }
